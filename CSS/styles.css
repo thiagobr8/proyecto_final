@@ -1,0 +1,294 @@
+*{ /*son margenes 0, no usa los predeterminados de google*/ 
+    margin: 2;
+    padding: 2;
+    box-sizing: border-box /**/
+
+}
+
+.practicando{ /* selector de clase */
+    color: rgb(0, 0, 0); /* cambia el color del texto */
+    font-size: 20px; /* cambia tamaño de texto */
+    text-align: start; /* damos posicion al texto en la web*/
+}
+
+h1{ /* selector de etiqueta*/
+    color: rgb(29, 29, 153); /* cambia el color del texto */
+    font-style: italic; /* cambia estilo de letra*/
+    font-size: 55px; /* cambia tamaño de texto */
+    text-align: center; /* damos posicion al texto en la web*/
+    text-decoration: underline; /* decoramos el texto*/
+    letter-spacing: 5px; /* el espacio entre el texto*/
+    
+}
+
+h2{ /* selector de etiqueta*/
+    color: rgb(202, 69, 69);
+    font-size: 30px;
+    text-decoration: overline;
+    
+}
+
+h5{
+    color: rgb(94, 51, 0);
+    text-decoration: underline;
+}
+
+a{ /* codigo para sacar la linea de abajo de los links del footer*/
+    text-decoration: none;
+}
+
+.card{
+    width: 300px; /*el tamaño del ancho la card*/
+    height: 350px; /*es la altura de la card*/
+    background-color: rgb(255, 255, 254); /*color de fondo de la card*/
+    border: 5px solid rgb(33, 143, 177); /*bordes de la card*/
+    padding: 15px; /*son las medidas de distancia de los bordes la card*/ /*si probas dandole mas valores se va distributendo a cada parte de la card*/
+    text-align: center; /*centra el contenido de la card, no la card entera (solo el contenido)*/
+    border-radius: 20px; /*para redondear los bordes de la card*/
+    margin-top: 50px; /*margen de distancia de arriba  la card*/ /*si probas dandole mas valores se va distributendo a cada parte de la card*/ /*si se esta usando "margin: 0 auto" este codigo no tiene poder ante el 0 auto*/
+    margin-left: 20px; /*margen de distancia de izquierda de la card*/ /*si probas dandole mas valores se va distributendo a cada parte de la card*/ /*si se esta usando "margin: 0 auto" este codigo no tiene poder ante el 0 auto*/
+    margin-bottom: 25px; /*margen de distancia de abajo de la card*/ /*si probas dandole mas valores se va distributendo a cada parte de la card*/ /*si se esta usando "margin: 0 auto" este codigo no tiene poder ante el 0 auto*/
+    margin: 0 auto; /* centra la imagen si es que el numero esta en 0 --> si esta en 0 anula las otras medidas puestas de los margin de laas lineas 43,42,41*/
+
+}
+
+.card img{ /*es la imagen que pertenece al div de la card*/
+    width: 100%; /*para que el ancho de la imagen sea igual al ancho de la card */
+
+}
+
+
+/*Contenedor limite*/
+.contenedor_Limite{
+    background-color: antiquewhite;
+    margin: 0 auto; /* centra la card --> importante ya que mueve todo (card y contenedor) */
+    max-width: 400px; /*ancho del contenedor limite --> importante*/
+    text-align: center;
+    padding: 25px;
+    border: 3px solid;
+    border-radius: 80px; /*para redondear los bordes del contenedor*/
+    margin-top: 50px;
+
+}
+
+
+.card3{
+    width: 300px; /*el tamaño del ancho la card*/
+    height: 320px; /*es la altura de la card*/
+    background-color: rgb(41, 76, 124); /*color de fondo de la card*/
+    border: 5px solid rgb(0, 0, 0); /*bordes de la card*/
+    padding: 5px; /*son las medidas de distancia de los bordes la card*/ /*si probas dandole mas valores se va distributendo a cada parte de la card*/
+    text-align: center; /*centra el contenido de la card, no la card entera (solo el contenido)*/
+    border-radius: 60px; /*para redondear los bordes de la card*/
+    margin-top: 50px; /*margen de distancia de arriba  la card*/ /*si probas dandole mas valores se va distributendo a cada parte de la card*/
+    margin-left: 70px; /*margen de distancia de izquierda de la card*/ /*si probas dandole mas valores se va distributendo a cada parte de la card*/
+    margin-bottom: 25px; /*margen de distancia de abajo de la card*/ /*si probas dandole mas valores se va distributendo a cada parte de la card*/
+    margin: 1 auto; /* mueve la imagen --> la centra la imagen si es que el numero esta en 0 --> si esta en 0 anula las otras medidas puestas de los margin */
+
+}
+
+.card3 img{ /*es la imagen que pertenece al div de la card*/
+    width: 55%; /*para que el ancho de la imagen sea igual al ancho de la card */
+
+}
+
+header{
+    background-color: #83c7ff56 ; 
+    padding: 25px; /*son las medidas de distancia de los bordes*/ /*si probas dandole mas valores se va distributendo a cada parte de la card*/
+    position: relative; /*Se pone para que lo que esta dentro del header lo siga al header*/
+    margin: 10px;
+}
+
+main{
+    position: relative;
+}
+
+footer{
+    background-color: #D0D3D4CC ;
+    margin: 10px;
+
+}
+
+main{
+    background-color: #D0D3D4CC ;
+    margin: 10px;
+}
+
+nav li{
+    display: inline; /*Pone los links uno al lado del otro*/
+    text-decoration: none;
+
+}
+
+nav{ /*para que los links esten arriba a la izquierda*/
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.imagen{
+    width: 325px;
+
+    
+    
+}
+
+.titulo{
+    position: absolute;
+    top: 5px;
+}
+
+body{ /*le pone un color de fondo a toda la pagina*/
+    background-color:rgb(123, 167, 167)
+}
+
+@media screen and (max-width:500px) {
+    header{
+        flex-direction: column;
+        align-items: start;
+    }
+
+}
+
+.contenedor_limite_2{
+    max-width: 1200px;
+    padding: 25px;
+    background-color: rgb(160, 211, 214);
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.padre{
+    background-color: rgb(183, 171, 197);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* para que cuando se achique la pantalla no se rompa la pagina */
+    padding: 10px;
+}
+
+.card2{
+    max-width: 300px;
+    background-color: whitesmoke;
+    border: 4px solid rgb(51, 104, 121);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 50px;
+
+}
+
+.card2 h2{
+    font-size: 25px;
+}
+.card2 img{
+    width: 190px;
+    height: 160px ;
+}
+.card2 p{
+    font-size: 20px;
+}
+
+
+.parent {
+    max-width: 600px; /*limita al width */
+    width: 400px ;
+    background-color: rgba(0, 0, 255, 0.301);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-top: 10px; /*margen de distancia de arriba  la card*/ /*si probas dandole mas valores se va distributendo a cada parte de la card*/
+}
+
+.h201 {
+    text-align: center;
+    margin-top: 50px;
+    color: (202, 69, 69);
+}
+
+
+.parent img {
+    height: 300px;
+}
+
+
+
+.div1 { 
+    grid-area: 1 / 1 / 2 / 3; 
+}
+
+.div1 img{
+    width: 100%;
+}
+
+.div2 {
+    grid-area: 2 / 1 / 3 / 2; 
+}
+
+.div2 img {
+    width: 100%;
+}
+
+
+
+.div3 { 
+    grid-area: 2 / 2 / 3 / 3; 
+}
+    
+.div3 img {
+    width: 100%;
+}
+
+
+.links{ /* se podue tmb usar "nav li{}" y es mas sencillo ya que no se usa class*/
+    color: black;
+
+}
+
+/*--------------- pseudoClase------*/
+.links:hover{
+    color:aliceblue;
+    font-size: 20px;
+    
+}
+
+.cardboobs{
+    width: 350px; /*el tamaño del ancho la card*/
+    height: 420px; /*es la altura de la card*/
+    background-color: rgb(240, 240, 240); /*color de fondo de la card*/
+    border: 5px solid rgba(104, 151, 206, 0.432); /*bordes de la card*/
+    padding: 15px; /*son las medidas de distancia de los bordes la card*/ /*si probas dandole mas valores se va distributendo a cada parte de la card*/
+    text-align: center; /*centra el contenido de la card, no la card entera (solo el contenido)*/
+    border-radius: 100px; /*para redondear los bordes de la card*/
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    position: relative;
+
+}
+
+/* Limita el tamaño del carrusel */
+.carousel {
+    max-width: 450px; /* Ajusta el ancho máximo */
+    max-height: 400px; /* Ajusta el alto máximo */
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    position: relative;
+   
+}
+
+/* Asegura que las imágenes se adapten al tamaño del carrusel */
+.carousel-item img {
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho del carrusel */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    object-fit: cover; /* Mantiene la relación de aspecto y cubre el área del contenedor */
+}
+
+
+.h2pers{
+    color: black;
+}
